@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = [];
+
+    for (let i=0;i<10;i++) {
+        a[i] = prompt("Nhập vào các phần tử mảng: ");
+    }
+        //     while (kt(a,x) ==false) {
+        //         x=prompt("nhập lại: ")
+        //     }
+        //     a.push(x)
+        // }
+        // document.write(a)
+        var first = 0;
+        var last = a.length - 1;
+        while (first < last) {
+            let b = a[first];
+            a[first] = a[last];
+            a[last] = b;
+            first++;
+            last--;
+        }
+        document.write(a);
+
+        // function kt(a,x) {
+        //     for (i=0;i<a.length;i++) {
+        //         if (a[i] == x)
+        //             return false
+        //     }
+        //     return  true
+        // }
+
+</script>
+</body>
+</html>

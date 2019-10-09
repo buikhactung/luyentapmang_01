@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [8,3,91,22,6,12,21,9,11,18];
+    var j;
+    max = a[0];
+
+    for (let i=0;i<=a.length;i++) {
+        if (max>0 && a[i] > max) {
+            max = a[i];
+            j=i
+        }
+    }
+
+    document.write("giá trị lớn nhất " +max +"ở vị trí " + j )
+</script>
+</body>
+</html>

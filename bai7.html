@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    for (let i = 0; i <= 5; i++) {
+        a[i] = prompt("Nhap phan tu cua mang: ");
+    }
+    var v = prompt("Nhap v: ");
+    for (let i = 0; i < a.length; i++) {
+        if (v === a[i]) {
+            for (; i < a.length; i++) {
+                a[i] = a[i + 1];
+            }
+        }
+    }
+    a[a.length - 1] = 0;
+    document.write(a)
+</script>
+</body>
+</html>

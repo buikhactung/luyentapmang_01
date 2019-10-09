@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let a = [];
+    // let array ;
+    // for (let i=0;i<10;i++) {
+    //     a[i] = prompt("Nhập phần tử mảng: ")
+    // }
+    let a = [8,3,91,22,6,12,21,92,11,18];
+    let sum=0;
+    max = a[0];
+    for (let i=0;i<a.length;i++) {
+        if (a[i]>max) {
+            max = a[i]
+        }
+        sum += a[i];
+    }
+    document.write(max);
+    document.write("<br>"+"giá trị trung bình " + sum/(a.length))
+
+
+</script>
+</body>
+</html>

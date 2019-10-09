@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = [];
+
+    for (let i = 0; i < 10; i++) {
+        a[i] = prompt("Nhập vào các phần tử mảng: ");
+    }
+    var v = prompt("Nhập số v: ");
+    for (i = 0; i < a.length; i++) {
+        if (v === a[i]) {
+            document.write("V is in the array");
+            break;
+        }
+    }
+    if (i == a.length)
+        document.write("V is not in the array")
+
+</script>
+</body>
+</html>
